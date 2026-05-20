@@ -295,7 +295,7 @@ ul {
   align-items: flex-end;
   padding-bottom: 6rem;
   justify-content: flex-start;
-  padding-left: 15rem;
+  padding-left: 6rem;
   gap: 20px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -313,7 +313,10 @@ ul {
   width: 100%;
   min-height: 30rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 6rem;
+  justify-content: flex-start;
+  padding-left: 6rem;
   gap: 20px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -331,7 +334,10 @@ ul {
   width: 100%;
   min-height: 30rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 6rem;
+  justify-content: flex-start;
+  padding-left: 6rem;
   grid-column: span 2;
   gap: 20px;
   cursor: pointer;
