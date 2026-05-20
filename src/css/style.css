@@ -292,7 +292,8 @@ ul {
   width: 100%;
   min-height: 30rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 1.5rem;
   gap: 20px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
