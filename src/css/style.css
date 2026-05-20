@@ -290,7 +290,7 @@ ul {
 
 .temporada {
   width: 100%;
-  min-height: 40rem;
+  min-height: 30rem;
   display: flex;
   align-items: center;
   gap: 20px;
