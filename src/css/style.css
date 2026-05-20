@@ -289,7 +289,7 @@ ul {
   row-gap: 180px;
 }
 
-.temporada {
+.temporada-1 {
   width: 100%;
   min-height: 30rem;
   display: flex;
@@ -307,7 +307,60 @@ ul {
   background-position: center; 
   background-repeat: no-repeat;
 }
-
+.temporada-2 {
+  width: 100%;
+  min-height: 30rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 60px;
+  backdrop-filter: blur(50px);
+  background-color: #0187ff;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-image: url(../images/competencia\ burger.jpg);
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+.temporada-3 {
+  width: 100%;
+  min-height: 30rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 60px;
+  backdrop-filter: blur(50px);
+  background-color: #0187ff;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-image: url(../images/imagen\ predio.jpg);
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+.temporada-4 {
+  width: 100%;
+  min-height: 30rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 60px;
+  backdrop-filter: blur(50px);
+  background-color: #0187ff;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-image: url(../images/imagen\ predio.jpg);
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat;
+}
 .temporada:hover {
   transform: scale(1.1);
 }
