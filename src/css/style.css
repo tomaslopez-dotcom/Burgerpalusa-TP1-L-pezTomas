@@ -364,6 +364,15 @@ ul {
 .temporada-1:hover {
   transform: scale(1.1);
 }
+.temporada-2:hover {
+  transform: scale(1.1);
+}
+.temporada-3:hover {
+  transform: scale(1.1);
+}
+.temporada-4:hover {
+  transform: scale(1.1);
+}
 
 .temporada-imagen {
   width: 60px;
