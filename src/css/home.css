@@ -11,7 +11,7 @@
 }
 
 .banner-info {
-  width: 500px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
