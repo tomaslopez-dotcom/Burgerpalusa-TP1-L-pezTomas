@@ -276,15 +276,14 @@ ul {
 }
 
 .temporadas {
-  width: 90%;
-  max-width: 1024px;
+  width: 95%;           /* antes era 90% */
+  max-width: 1400px;    /* antes era 1024px */
   margin: 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
+  column-gap: 40px;     /* podés reducir el gap también */
   row-gap: 30px;
 }
-
 .temporadas-2 {
   row-gap: 180px;
 }
