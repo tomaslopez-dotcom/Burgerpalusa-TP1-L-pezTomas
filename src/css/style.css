@@ -296,9 +296,9 @@ footer {
 }
 
 .temporada-1 { background-image: url(../images/imagen\ predio.jpg); }
-.temporada-2 { background-image: url(../images/competencia\ burger.jpg); }
+.temporada-2 { background-image: url(../images/burguer\ ffoodtrak.jpg); }
 .temporada-3 {
-  background-image: url(../images/imagen\ predio.jpg);
+  background-image: url(../images/flyer\ competencia.jpg);
   grid-column: span 2;
   padding: 1rem 6rem;
 }
