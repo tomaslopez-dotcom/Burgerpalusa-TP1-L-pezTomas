@@ -349,11 +349,52 @@ footer {
   margin-top: 2px;
 }
 
+/* ── TICKER ── */
+.ticker {
+  width: 100%;
+  background-color: #000000;
+  padding: 14px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker_track {
+  display: inline-flex;
+  gap: 0;
+  animation: ticker-scroll 18s linear infinite;
+}
+
+.ticker_item {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-amarillo);
+  padding: 0 40px;
+}
+
+.ticker_item span {
+  color: var(--color-verde);
+  margin-left: 8px;
+}
+
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+
+
+
+
+
 /* ── TRANSPORTE ── */
 .transporte {
   width: 100%;
   background-color: var(--color-amarillo);
-  margin-top: 120px;
+  margin-top: 0;
 }
 
 .transporte_container {
