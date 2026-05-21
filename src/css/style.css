@@ -282,8 +282,7 @@ footer {
 
 /* ── SOBRE EL EVENTO ── */
 .temporadas-y-episodios {
-  background-image: url("../images/fondo sobre el evento.jpg");
-  height: auto;
+  background: linear-gradient(to bottom, #000000, #fff600);
 }
 
 .temporadas {
