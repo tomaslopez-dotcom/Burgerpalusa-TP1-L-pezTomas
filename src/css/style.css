@@ -330,6 +330,110 @@ footer {
   margin-top: 2px;
 }
 
+/******TRANSPORTE*******/
+.transporte {
+  width: 100%;
+  background-color: #F4ECE7;
+  margin-top: 120px;
+}
+
+.transporte_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 48px;
+}
+
+.transporte_header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+
+.transporte_contenido {
+  display: flex;
+  gap: 48px;
+  align-items: stretch;
+}
+
+.transporte_opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.transporte_opcion {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background-color: #FBF3EE;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #FFDBCF;
+}
+
+.transporte_icono {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transporte_icono img {
+  width: 24px;
+  height: 24px;
+}
+
+.opcion_auto .transporte_icono {
+  background-color: #DDCCBF;
+}
+.opcion_shuttle .transporte_icono {
+  background-color: #CBD9CA;
+}
+.opcion_rideshare .transporte_icono {
+  background-color: #FBDFCC;
+}
+
+.transporte_opcion_titulo {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-negro);
+  margin-bottom: 6px;
+}
+
+.transporte_opcion_texto {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-negro);
+}
+
+.transporte_mapa {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transporte_iframe {
+  width: 100%;
+  height: 340px;
+  border: 0;
+  border-radius: 16px;
+}
+
+.transporte_direccion {
+  font-size: 12px;
+}
+
+
+
+
+
+
 /**************FAQ**************/
 .faq {
   padding: 100px 48px;
