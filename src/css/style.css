@@ -269,10 +269,12 @@ ul {
 }
 .temporadas-y-episodios {
   background-image: url("../images/fondo\ sobre\ el\ evento.jpg");
+  height: auto;
 }
 
 .temporadas-y-episodios-2 {
   background-image: url("../images/fondo\ sobre\ el\ evento\ 2.jpg");
+  height: auto;
 }
 
 .temporadas {
@@ -414,6 +416,7 @@ ul {
 .fondo-formulario {
   background-image: url("../images/FONDO\ FORMULARIO\ BURGER.jpg");
   background-size: contain
+
 }
 fieldset {
   display: flex;
