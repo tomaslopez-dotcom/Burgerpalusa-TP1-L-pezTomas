@@ -71,6 +71,14 @@
   font-display: swap;
 }
 
+/* ── VARIABLES ── */
+:root {
+  --color-negro: #1a1a1a;
+  --color-naranja: #5ddf23;
+  --color-amarillo: #f2ff00;
+  --color-verde: #5ddf23;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -87,9 +95,7 @@ body {
   font-family: "AloeveraDisplay", sans-serif;
 }
 
-
-
-/**************NAVBAR**************/
+/* ── NAVBAR ── */
 .navbar {
   position: fixed;
   top: 0;
@@ -99,7 +105,6 @@ body {
   padding: 20px 48px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   justify-content: space-between;
   background: rgba(30, 27, 27, 0.25);
   backdrop-filter: blur(8px);
@@ -122,7 +127,7 @@ body {
 }
 
 .navbar_links a:hover {
-  color: #f2ff00;
+  color: var(--color-amarillo);
 }
 
 .navbar_cta {
@@ -131,7 +136,7 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
-  background-color: #5ddf23;
+  background-color: var(--color-verde);
   color: #ffffff;
   padding: 12px 28px;
   border-radius: 32px;
@@ -139,7 +144,7 @@ body {
 }
 
 .navbar_cta:hover {
-  background-color: #f2ff00;
+  background-color: var(--color-amarillo);
   color: #000000;
   transform: translateY(-2px);
 }
@@ -179,6 +184,20 @@ p {
   color: #ffffff;
 }
 
+.antetitulos {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-negro);
+}
+
+.titulos {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--color-negro);
+}
+
 /* ── FOOTER ── */
 footer {
   background-image: url("../images/fondo-contacto.jpg");
@@ -191,13 +210,13 @@ footer {
   height: 160px;
 }
 
-
+/* ── SOCIAL ICONS ── */
 .example-1 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
-  background-color: #5ddf23;
+  background-color: var(--color-verde);
   border-radius: 30px;
   padding: 20px;
   height: 70px;
@@ -216,7 +235,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
-  color: #5ddf23;
+  color: var(--color-verde);
   padding: 6px 10px;
   border-radius: 5px;
   opacity: 0;
@@ -241,7 +260,7 @@ footer {
   height: 50px;
   border-radius: 50%;
   color: #fff;
-  background-color: #5ddf23;
+  background-color: var(--color-verde);
   transition: all 0.3s ease-in-out;
   font-weight: bolder;
 }
@@ -261,7 +280,7 @@ footer {
 .example-1 .icon-content .link[data-social="dribbble"]:hover  { color: #686868; }
 .example-1 .icon-content .link[data-social="telegram"]:hover  { color: #23b100; }
 
-/* ── TEMPORADAS ── */
+/* ── SOBRE EL EVENTO ── */
 .temporadas-y-episodios {
   background-image: url("../images/fondo sobre el evento.jpg");
   height: auto;
@@ -310,7 +329,7 @@ footer {
 }
 
 .temporada-titulo {
-  color: #f2ff00;
+  color: var(--color-amarillo);
   font-size: 20px;
   font-weight: 600;
   margin-left: 14px;
@@ -330,10 +349,10 @@ footer {
   margin-top: 2px;
 }
 
-/******TRANSPORTE*******/
+/* ── TRANSPORTE ── */
 .transporte {
   width: 100%;
-  background-color: #fff000;
+  background-color: var(--color-amarillo);
   margin-top: 120px;
 }
 
@@ -388,19 +407,13 @@ footer {
   height: 24px;
 }
 
-.opcion_auto .transporte_icono {
-  background-color: #DDCCBF;
-}
-.opcion_shuttle .transporte_icono {
-  background-color: #CBD9CA;
-}
-.opcion_rideshare .transporte_icono {
-  background-color: #FBDFCC;
-}
+.opcion_auto .transporte_icono     { background-color: #DDCCBF; }
+.opcion_shuttle .transporte_icono  { background-color: #CBD9CA; }
+.opcion_rideshare .transporte_icono { background-color: #FBDFCC; }
 
 .transporte_opcion_titulo {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--color-negro);
   margin-bottom: 6px;
 }
@@ -425,16 +438,7 @@ footer {
   border-radius: 16px;
 }
 
-.transporte_direccion {
-  font-size: 12px;
-}
-
-
-
-
-
-
-/**************FAQ**************/
+/* ── FAQ ── */
 .faq {
   padding: 100px 48px;
   background-image: url(../images/fondo\ faq.jpg);
@@ -505,20 +509,13 @@ footer {
   opacity: 0;
   font-weight: 300;
   transform: translateY(-6px);
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .faq_item[open] .faq_respuesta {
   opacity: 1;
   transform: translateY(0);
 }
-
-
-
-
-
 
 /* ── FORMULARIO ── */
 .fondo-formulario {
@@ -584,7 +581,7 @@ legend {
   font-family: "AloeveraDisplay", sans-serif;
   width: 100px;
   height: 30px;
-  background-color: #5ddf23;
+  background-color: var(--color-verde);
   border: none;
   border-radius: 100px;
   font-weight: 500;
