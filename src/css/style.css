@@ -592,7 +592,7 @@ legend {
 
 /**************FOOTER**************/
 .footer {
-  background-color: #171313;
+  background-color: #000000;
   padding: 56px 24px 40px;
   display: flex;
   flex-direction: column;
