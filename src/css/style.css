@@ -217,6 +217,7 @@ p {
 
 .banner-logo {
   width: 100%;
+  align-items: center;
 }
 
 .banner-imagen {
