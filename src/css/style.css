@@ -79,6 +79,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -91,6 +92,11 @@ html {
 
 body {
   font-family: "AloeveraDisplay", sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* NAVBAR */
@@ -124,7 +130,8 @@ body {
   transition: color 0.2s ease;
 }
 
-.navbar_links a:hover {
+.navbar_links a:hover,
+.navbar_links a.activo {
   color: var(--color-amarillo);
 }
 
@@ -145,6 +152,36 @@ body {
   background-color: var(--color-amarillo);
   color: #000000;
   transform: translateY(-2px);
+}
+
+/* TOGGLE MOBILE (hamburguesa) */
+.navbar_toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 1100;
+}
+
+.navbar_toggle span {
+  width: 26px;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.navbar_toggle.activo span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar_toggle.activo span:nth-child(2) {
+  opacity: 0;
+}
+.navbar_toggle.activo span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* SECCIONES */
@@ -578,4 +615,208 @@ legend {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.4);
+}
+
+/* ============================================
+   RESPONSIVE - MEDIA QUERIES
+   Desktop > 1024px (estilos base de arriba)
+   Tablet: 768px - 1024px
+   Mobile: < 768px
+   ============================================ */
+
+/* ---------- TABLET (hasta 1024px) ---------- */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 18px 32px;
+  }
+
+  .seccion {
+    padding: 60px 28px;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  .titulos {
+    font-size: 34px;
+  }
+
+  /* Banner */
+  .banner {
+    background-size: cover;
+    padding-left: 40px;
+  }
+
+  .banner-info {
+    width: 50%;
+  }
+
+  /* Sobre el evento: grid sigue en 2 col pero más chico */
+  .temporada-1,
+  .temporada-2,
+  .temporada-3 {
+    min-height: 22rem;
+  }
+
+  .temporada-3 {
+    padding: 1rem 3rem;
+  }
+
+  /* Transporte: pasa a columna */
+  .transporte_contenido {
+    flex-direction: column;
+  }
+
+  .transporte_iframe {
+    height: 280px;
+  }
+
+  /* FAQ */
+  .faq_container {
+    padding: 0 24px;
+  }
+
+  /* Formulario */
+  form {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+}
+
+/* ---------- MOBILE (hasta 768px) ---------- */
+@media (max-width: 768px) {
+  /* Navbar con menu hamburguesa */
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .navbar_toggle {
+    display: flex;
+  }
+
+  .navbar_links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background-color: rgba(10, 10, 10, 0.97);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 28px;
+    padding: 40px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar_links.activo {
+    transform: translateX(0);
+  }
+
+  .navbar_links a {
+    font-size: 18px;
+  }
+
+  .navbar_cta {
+    display: none;
+  }
+
+  /* Tipografía */
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .titulos {
+    font-size: 26px;
+  }
+
+  .antetitulos {
+    font-size: 11px;
+  }
+
+  .seccion {
+    padding: 50px 20px;
+    min-height: auto;
+  }
+
+  /* Banner: stack vertical */
+  .banner {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 120px 24px 60px;
+    gap: 30px;
+    background-size: cover;
+  }
+
+  .banner-info,
+  .banner-imagen {
+    width: 90%;
+  }
+
+  /* Sobre el evento: 1 columna */
+  .temporadas {
+    grid-template-columns: 1fr;
+  }
+
+  .temporada-1,
+  .temporada-2,
+  .temporada-3 {
+    grid-column: span 1;
+    min-height: 18rem;
+    padding: 1rem;
+    margin-top: 20px;
+  }
+
+  .temporada-texto {
+    font-size: 12px;
+  }
+
+  /* Ticker */
+  .ticker_item {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+
+  /* Transporte */
+  .transporte_container {
+    padding: 60px 24px;
+  }
+
+  .transporte_opcion {
+    padding: 16px;
+  }
+
+  /* FAQ */
+  .faq {
+    padding: 60px 20px;
+  }
+
+  .faq_container {
+    padding: 0;
+  }
+
+  .faq_pregunta {
+    font-size: 15px;
+  }
+
+  /* Formulario */
+  form {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 20px 30px;
+  }
 }

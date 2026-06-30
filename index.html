@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./src/icons/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="stylesheet" href="./src/css/home.css" />
     <title>Home - Burger Palusa</title>
   </head>
   <body>
@@ -13,14 +12,21 @@
     <!-- NAVBAR -->
     <header>
       <nav class="navbar">
-        <ul class="navbar_links">
+        <ul class="navbar_links" id="navbarLinks">
           <li><a href="#banner">Inicio</a></li>
           <li><a href="#sobre">El Festival</a></li>
           <li><a href="#transporte">Como llegar</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="ordenes.html">Mis Órdenes</a></li>
           <li><a href="#formulario">Contacto</a></li>
         </ul>
-        <a href="#formulario" class="navbar_cta">Contacto</a>
+        <a href="tienda.html" class="navbar_cta">Comprar entradas</a>
+        <button class="navbar_toggle" id="navbarToggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </header>
 
@@ -244,6 +250,23 @@
       </p>
 
     </footer>
+
+    <script>
+      const navbarToggle = document.getElementById('navbarToggle');
+      const navbarLinks = document.getElementById('navbarLinks');
+
+      navbarToggle.addEventListener('click', () => {
+        navbarToggle.classList.toggle('activo');
+        navbarLinks.classList.toggle('activo');
+      });
+
+      navbarLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navbarToggle.classList.remove('activo');
+          navbarLinks.classList.remove('activo');
+        });
+      });
+    </script>
 
   </body>
 </html>

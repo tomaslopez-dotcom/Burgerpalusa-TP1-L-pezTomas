@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/tienda.css" />
+    <title>Tienda - Burger Palusa</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <ul class="navbar_links" id="navbarLinks">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#sobre">El Festival</a></li>
+          <li><a href="index.html#transporte">Como llegar</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="tienda.html" class="activo">Tienda</a></li>
+          <li><a href="ordenes.html">Mis Órdenes</a></li>
+          <li><a href="index.html#formulario">Contacto</a></li>
+        </ul>
+        <a href="#tienda-grid" class="navbar_cta">Ver entradas</a>
+        <button class="navbar_toggle" id="navbarToggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="pagina-interior">
+
+      <!-- HERO -->
+      <section class="hero-interior">
+        <span class="antetitulos" style="color: var(--color-amarillo);">Tienda Oficial</span>
+        <h1 class="title-blanco">Entradas y Merchandising</h1>
+        <p>Conseguí tu entrada para Burger Palusa y llevate productos exclusivos del festival. Stock limitado.</p>
+      </section>
+
+      <!-- PRODUCTOS -->
+      <section class="tienda-seccion" id="tienda-grid">
+        <div class="tienda-intro">
+          <h2 class="titulos">Elegí tu experiencia</h2>
+          <p>Tres formas de vivir el festival, pensadas para cada tipo de público.</p>
+        </div>
+
+        <div class="tienda-grid">
+
+          <div class="producto-card">
+            <img class="producto-card_img" src="./src/images/burguer ffoodtrak.jpg" alt="Entrada General" />
+            <div class="producto-card_info">
+              <h3 class="producto-card_titulo">Entrada General</h3>
+              <p class="producto-card_desc">Acceso completo al predio durante la jornada del festival. Incluye acceso a todas las zonas gastronómicas y al escenario principal.</p>
+              <div class="producto-card_footer">
+                <div class="producto-card_precio">$25.000 <span>por persona</span></div>
+                <a href="checkout.html?producto=Entrada%20General&precio=25000" class="btn-comprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="producto-card producto-card_destacado">
+            <span class="producto-card_badge">Más elegida</span>
+            <img class="producto-card_img" src="./src/images/imagen predio.jpg" alt="Entrada VIP + Camping" />
+            <div class="producto-card_info">
+              <h3 class="producto-card_titulo">VIP + Camping</h3>
+              <p class="producto-card_desc">Experiencia de 24 horas con acceso a zona VIP, camping dentro del predio y acceso prioritario a Burger Battle.</p>
+              <div class="producto-card_footer">
+                <div class="producto-card_precio">$48.000 <span>por persona</span></div>
+                <a href="checkout.html?producto=VIP%20%2B%20Camping&precio=48000" class="btn-comprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img class="producto-card_img" src="./src/images/flyer competencia.jpg" alt="Pase Burger Battle" />
+            <div class="producto-card_info">
+              <h3 class="producto-card_titulo">Pase Burger Battle</h3>
+              <p class="producto-card_desc">Acceso exclusivo a la zona de jurado popular de la competencia, con degustación incluida de los finalistas.</p>
+              <div class="producto-card_footer">
+                <div class="producto-card_precio">$32.000 <span>por persona</span></div>
+                <a href="checkout.html?producto=Pase%20Burger%20Battle&precio=32000" class="btn-comprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img class="producto-card_img" src="./src/images/burger palusa.png" alt="Remera oficial" style="object-fit: contain; background-color:#fff;" />
+            <div class="producto-card_info">
+              <h3 class="producto-card_titulo">Remera Oficial</h3>
+              <p class="producto-card_desc">Remera de algodón con el logo oficial de Burger Palusa edición 2026. Talles S a XL.</p>
+              <div class="producto-card_footer">
+                <div class="producto-card_precio">$15.000 <span>unidad</span></div>
+                <a href="checkout.html?producto=Remera%20Oficial&precio=15000" class="btn-comprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img class="producto-card_img" src="./src/images/TITULO BURGER HOME.png" alt="Gorra Burger Palusa" style="object-fit: contain; background-color:#1a1a1a;" />
+            <div class="producto-card_info">
+              <h3 class="producto-card_titulo">Gorra Burger Palusa</h3>
+              <p class="producto-card_desc">Gorra bordada edición limitada, ideal para el día completo bajo el sol del predio.</p>
+              <div class="producto-card_footer">
+                <div class="producto-card_precio">$12.000 <span>unidad</span></div>
+                <a href="checkout.html?producto=Gorra%20Burger%20Palusa&precio=12000" class="btn-comprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img class="producto-card_img" src="./src/images/fondo home burger.jpg" alt="Combo Foodie" />
+            <div class="producto-card_info">
+              <h3 class="producto-card_titulo">Combo Foodie</h3>
+              <p class="producto-card_desc">Voucher canjeable por 3 hamburguesas a elección en cualquier food truck del predio durante el evento.</p>
+              <div class="producto-card_footer">
+                <div class="producto-card_precio">$18.000 <span>combo</span></div>
+                <a href="checkout.html?producto=Combo%20Foodie&precio=18000" class="btn-comprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- LINEA DE PRODUCTOS / INFO AMPLIADA -->
+      <section class="linea-productos">
+        <div class="linea-header">
+          <span class="antetitulos">La marca</span>
+          <h2 class="titulos">Más sobre Burger Palusa</h2>
+          <p>Desde 2022, Burger Palusa nació como un encuentro entre hamburgueserías independientes de Buenos Aires y hoy es uno de los festivales gastronómicos más esperados del año, combinando comida, música y competencia en un mismo predio.</p>
+        </div>
+
+        <div class="linea-grid">
+
+          <div class="linea-item">
+            <span class="linea-item_icono">🍔</span>
+            <h4 class="linea-item_titulo">Burger Battle</h4>
+            <p class="linea-item_texto">Competencia oficial entre las mejores hamburgueserías independientes del país.</p>
+          </div>
+
+          <div class="linea-item">
+            <span class="linea-item_icono">🚚</span>
+            <h4 class="linea-item_titulo">Food Trucks</h4>
+            <p class="linea-item_texto">Más de 30 propuestas gastronómicas curadas, desde clásicas hasta fusión.</p>
+          </div>
+
+          <div class="linea-item">
+            <span class="linea-item_icono">⛺</span>
+            <h4 class="linea-item_titulo">Camping</h4>
+            <p class="linea-item_texto">Zona habilitada para vivir la experiencia completa de 24 horas dentro del predio.</p>
+          </div>
+
+          <div class="linea-item">
+            <span class="linea-item_icono">🎵</span>
+            <h4 class="linea-item_titulo">Shows en vivo</h4>
+            <p class="linea-item_texto">Bandas y DJs en el escenario principal durante toda la jornada del festival.</p>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+      <a href="index.html">
+        <img src="./src/images/burger palusa.png" alt="Logo Burgerpalusa" class="logo_footer">
+      </a>
+
+      <div class="footer_redes">
+        <a href="https://x.com/burgerpalusa" aria-label="X">
+          <svg class="footer_icono_red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/burgerpalusa/" aria-label="Instagram">
+          <svg class="footer_icono_red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer_copy">
+        © 2026 Burgerpalusa Festival. Todos los derechos reservados.
+      </p>
+
+    </footer>
+
+    <script>
+      const navbarToggle = document.getElementById('navbarToggle');
+      const navbarLinks = document.getElementById('navbarLinks');
+
+      navbarToggle.addEventListener('click', () => {
+        navbarToggle.classList.toggle('activo');
+        navbarLinks.classList.toggle('activo');
+      });
+
+      navbarLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navbarToggle.classList.remove('activo');
+          navbarLinks.classList.remove('activo');
+        });
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/tienda.css" />
+    <title>Mis Órdenes - Burger Palusa</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <ul class="navbar_links" id="navbarLinks">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="ordenes.html" class="activo">Mis Órdenes</a></li>
+          <li><a href="index.html#formulario">Contacto</a></li>
+        </ul>
+        <a href="tienda.html" class="navbar_cta">Ir a la tienda</a>
+        <button class="navbar_toggle" id="navbarToggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="pagina-interior">
+
+      <!-- HERO -->
+      <section class="hero-interior">
+        <span class="antetitulos" style="color: var(--color-amarillo);">Tu cuenta</span>
+        <h1 class="title-blanco">Mis órdenes</h1>
+        <p>Revisá el historial de tus compras y entradas para Burger Palusa.</p>
+      </section>
+
+      <!-- LISTADO DE ORDENES -->
+      <section class="ordenes-seccion">
+
+        <div class="orden-card">
+          <div class="orden-card_info">
+            <h4>Orden #BP-2026-00482</h4>
+            <p>VIP + Camping · 1 entrada · Comprado el 12/06/2026</p>
+          </div>
+          <span class="orden-card_estado entregado">Entregado</span>
+          <div class="orden-card_precio">$48.000</div>
+        </div>
+
+        <div class="orden-card">
+          <div class="orden-card_info">
+            <h4>Orden #BP-2026-00417</h4>
+            <p>Remera Oficial · Talle M · Comprado el 02/06/2026</p>
+          </div>
+          <span class="orden-card_estado proceso">En proceso</span>
+          <div class="orden-card_precio">$15.000</div>
+        </div>
+
+        <div class="orden-card">
+          <div class="orden-card_info">
+            <h4>Orden #BP-2026-00355</h4>
+            <p>Pase Burger Battle · 2 entradas · Comprado el 20/05/2026</p>
+          </div>
+          <span class="orden-card_estado entregado">Entregado</span>
+          <div class="orden-card_precio">$64.000</div>
+        </div>
+
+        <div class="orden-card">
+          <div class="orden-card_info">
+            <h4>Orden #BP-2026-00298</h4>
+            <p>Combo Foodie · 1 voucher · Comprado el 08/05/2026</p>
+          </div>
+          <span class="orden-card_estado entregado">Entregado</span>
+          <div class="orden-card_precio">$18.000</div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <a href="index.html">
+        <img src="./src/images/burger palusa.png" alt="Logo Burgerpalusa" class="logo_footer">
+      </a>
+      <p class="footer_copy">
+        © 2026 Burgerpalusa Festival. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <script>
+      const navbarToggle = document.getElementById('navbarToggle');
+      const navbarLinks = document.getElementById('navbarLinks');
+      navbarToggle.addEventListener('click', () => {
+        navbarToggle.classList.toggle('activo');
+        navbarLinks.classList.toggle('activo');
+      });
+    </script>
+
+  </body>
+</html>

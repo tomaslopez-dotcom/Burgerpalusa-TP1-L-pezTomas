@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/tienda.css" />
+    <title>Compra confirmada - Burger Palusa</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <ul class="navbar_links" id="navbarLinks">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="ordenes.html">Mis Órdenes</a></li>
+          <li><a href="index.html#formulario">Contacto</a></li>
+        </ul>
+        <a href="tienda.html" class="navbar_cta">Seguir comprando</a>
+        <button class="navbar_toggle" id="navbarToggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="pagina-interior">
+      <section class="tienda-seccion" style="background-color:#FBF3EE;">
+        <div class="confirmacion-box">
+          <div class="confirmacion-icono">✓</div>
+          <h1>¡Compra confirmada!</h1>
+          <p>Te enviamos el comprobante y tu entrada digital a tu correo electrónico. También podés ver el detalle en tu historial de órdenes.</p>
+
+          <div class="confirmacion-numero">
+            N° de orden: #BP-2026-00482
+          </div>
+
+          <div>
+            <a href="ordenes.html" class="btn-continuar" style="text-decoration:none; margin-right: 12px;">Ver mis órdenes</a>
+            <a href="index.html" class="btn-volver">Volver al inicio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <a href="index.html">
+        <img src="./src/images/burger palusa.png" alt="Logo Burgerpalusa" class="logo_footer">
+      </a>
+      <p class="footer_copy">
+        © 2026 Burgerpalusa Festival. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <script>
+      const navbarToggle = document.getElementById('navbarToggle');
+      const navbarLinks = document.getElementById('navbarLinks');
+      navbarToggle.addEventListener('click', () => {
+        navbarToggle.classList.toggle('activo');
+        navbarLinks.classList.toggle('activo');
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,640 @@
+/* ============================================
+   TIENDA / CHECKOUT / ÓRDENES
+   Usa las mismas variables y tipografía de style.css
+   ============================================ */
+
+.pagina-interior {
+  padding-top: 110px;
+}
+
+/* ---------- HERO de páginas internas ---------- */
+.hero-interior {
+  background-color: var(--color-negro);
+  padding: 50px 40px 60px;
+  text-align: center;
+}
+
+.hero-interior h1 {
+  margin-bottom: 10px;
+}
+
+.hero-interior p {
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+/* ---------- BREADCRUMB / STEPS (checkout) ---------- */
+.checkout-pasos {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.checkout-paso {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.checkout-paso_numero {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.checkout-paso.activo {
+  background-color: var(--color-amarillo);
+  color: var(--color-negro);
+}
+
+.checkout-paso.activo .checkout-paso_numero {
+  background-color: var(--color-negro);
+  color: var(--color-amarillo);
+}
+
+.checkout-paso.completo {
+  color: var(--color-verde);
+}
+
+.checkout-paso.completo .checkout-paso_numero {
+  background-color: var(--color-verde);
+  color: #ffffff;
+}
+
+/* ---------- TIENDA ---------- */
+.tienda-seccion {
+  padding: 70px 48px;
+  background-color: #ffffff;
+}
+
+.tienda-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.tienda-intro .titulos {
+  margin-bottom: 12px;
+}
+
+.tienda-intro p {
+  color: var(--color-negro);
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+.tienda-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.producto-card {
+  background-color: #FBF3EE;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #FFDBCF;
+  transition: transform 0.2s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-6px);
+}
+
+.producto-card_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #ddd;
+}
+
+.producto-card_destacado {
+  position: relative;
+}
+
+.producto-card_badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: var(--color-verde);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 100px;
+}
+
+.producto-card_info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.producto-card_titulo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-negro);
+  margin-bottom: 8px;
+}
+
+.producto-card_desc {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-negro);
+  opacity: 0.7;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.producto-card_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.producto-card_precio {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-negro);
+}
+
+.producto-card_precio span {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.6;
+  display: block;
+}
+
+.btn-comprar {
+  font-family: "AloeveraDisplay", sans-serif;
+  background-color: var(--color-negro);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.btn-comprar:hover {
+  background-color: var(--color-verde);
+}
+
+/* ---------- LINEA DE PRODUCTOS (info ampliada) ---------- */
+.linea-productos {
+  background-color: var(--color-negro);
+  padding: 80px 48px;
+}
+
+.linea-productos .titulos,
+.linea-productos .antetitulos {
+  color: #ffffff;
+}
+
+.linea-productos .antetitulos {
+  color: var(--color-amarillo);
+}
+
+.linea-header {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linea-header p {
+  margin-top: 12px;
+  opacity: 0.7;
+}
+
+.linea-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.linea-item {
+  text-align: center;
+  padding: 28px 16px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.linea-item_icono {
+  font-size: 32px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.linea-item_titulo {
+  color: var(--color-amarillo);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.linea-item_texto {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* ---------- CARRITO LATERAL / RESUMEN ---------- */
+.checkout-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 48px 100px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.checkout-form-card {
+  background-color: #FBF3EE;
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid #FFDBCF;
+}
+
+.checkout-form-card h3 {
+  color: var(--color-negro);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.checkout-grupo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.checkout-grupo label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-negro);
+  margin-bottom: 8px;
+}
+
+.checkout-grupo input,
+.checkout-grupo select {
+  font-family: "AloeveraDisplay", sans-serif;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #e0cfc6;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+.checkout-fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.checkout-metodos {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.checkout-metodo {
+  flex: 1;
+  min-width: 110px;
+  text-align: center;
+  padding: 16px 10px;
+  border-radius: 12px;
+  border: 2px solid #e0cfc6;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-negro);
+  background-color: #ffffff;
+}
+
+.checkout-metodo.activo {
+  border-color: var(--color-verde);
+  background-color: rgba(93, 223, 35, 0.1);
+}
+
+.checkout-acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-volver {
+  font-family: "AloeveraDisplay", sans-serif;
+  background: none;
+  border: none;
+  color: var(--color-negro);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-continuar {
+  font-family: "AloeveraDisplay", sans-serif;
+  background-color: var(--color-verde);
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Resumen de compra */
+.resumen-card {
+  background-color: var(--color-negro);
+  border-radius: 20px;
+  padding: 32px;
+  position: sticky;
+  top: 130px;
+}
+
+.resumen-card h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.resumen-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resumen-item_nombre {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.resumen-item_nombre span {
+  display: block;
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.resumen-item_precio {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.resumen-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 16px;
+}
+
+.resumen-total span:first-child {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.resumen-total span:last-child {
+  color: var(--color-amarillo);
+  font-size: 26px;
+  font-weight: 800;
+}
+
+/* ---------- CONFIRMACIÓN ---------- */
+.confirmacion-box {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 24px 100px;
+}
+
+.confirmacion-icono {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: var(--color-verde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 28px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.confirmacion-box h1 {
+  color: var(--color-negro);
+  margin-bottom: 12px;
+}
+
+.confirmacion-box p {
+  color: var(--color-negro);
+  opacity: 0.7;
+  margin-bottom: 32px;
+}
+
+.confirmacion-numero {
+  display: inline-block;
+  background-color: #FBF3EE;
+  border: 1px solid #FFDBCF;
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-weight: 700;
+  color: var(--color-negro);
+  margin-bottom: 32px;
+}
+
+/* ---------- ÓRDENES ---------- */
+.ordenes-seccion {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+}
+
+.orden-card {
+  background-color: #FBF3EE;
+  border: 1px solid #FFDBCF;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.orden-card_info h4 {
+  color: var(--color-negro);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.orden-card_info p {
+  color: var(--color-negro);
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+.orden-card_estado {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 100px;
+}
+
+.orden-card_estado.entregado {
+  background-color: rgba(93, 223, 35, 0.15);
+  color: #3a9e0f;
+}
+
+.orden-card_estado.proceso {
+  background-color: rgba(242, 255, 0, 0.25);
+  color: #7a7c00;
+}
+
+.orden-card_precio {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-negro);
+}
+
+.ordenes-vacio {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--color-negro);
+  opacity: 0.6;
+}
+
+/* ============================================
+   RESPONSIVE - TIENDA / CHECKOUT / ÓRDENES
+   ============================================ */
+@media (max-width: 1024px) {
+  .tienda-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .linea-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .resumen-card {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .pagina-interior {
+    padding-top: 90px;
+  }
+
+  .hero-interior {
+    padding: 36px 24px 40px;
+  }
+
+  .checkout-pasos {
+    gap: 8px;
+  }
+
+  .checkout-paso {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .tienda-seccion {
+    padding: 50px 24px;
+  }
+
+  .tienda-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .linea-productos {
+    padding: 50px 24px;
+  }
+
+  .linea-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .checkout-layout {
+    padding: 40px 20px 70px;
+    gap: 24px;
+  }
+
+  .checkout-form-card {
+    padding: 24px;
+  }
+
+  .checkout-fila {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-metodos {
+    flex-direction: column;
+  }
+
+  .checkout-acciones {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .btn-continuar {
+    width: 100%;
+  }
+
+  .orden-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .confirmacion-box {
+    padding: 60px 20px 70px;
+  }
+}
